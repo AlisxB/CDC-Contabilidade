@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC CONTABILIDADE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="header">
+            <div class="logo">
+                <img src="../img/logo_white.png" width="130px" height="80px">
+            </div>
+            <div class="mobile-menu">
+                <div class='line1'></div>
+                <div class='line2'></div>
+                <div class='line3'></div>
+            </div>
+            <ul class="nav-list" id="atalhos">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sessao-sobre">Quem Somos</a></li>
+                <li><a href="#sessao-servicos">Serviços</a></li>
+                <li><a href="#sessao-contatos">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!--inicio-->
+    <section class="home" id="home">
+
+            <div class="home-content">
+                <div class="text-1">CDC CONTABILIDADE</div>
+
+                <div class="txt-animado">
+                    Administrando com<br><span class="animation"></span>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=5585988462689&text=" target="_blank" class="btn-banner">Entrar em Contato</a>
+            </div>
+    </section>
+   
+    <!--SERVIÇOS-->
+    <section class="services" id="services">
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <ion-icon name="trending-up-outline"></ion-icon>
+                        <div class="text">Missão</div>
+                        <p>Fomentar o crescimento organizacional com gestão administrativa preventiva, transformando conhecimento em valor para otimizar resultados.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <ion-icon name="search-outline"></ion-icon>
+                        <div class="text">Visão</div>
+                        <p>Almejamos ser a referência em nosso setor, incessantemente buscando aprimoramento e inovação constante.</p>
+                    </div>
+                </div>
+
+                <div class="card" id="cardvalores">
+                    <div class="box">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <div class="text">Valores</div>
+                        <p>Ética, Respeito, Honestidade, Transparência, Valorização do Colaborador, Comprometimento e Profissionalismo.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--SOBRE-->
+    <section class="container-sobre" id="sessao-sobre">
+        <img align="left" class="imagem-sobre" src="img/sobre.jpg" alt="logo">
+        <div id="sobre">
+            <h2 id="titulo-sobre">SOBRE</h2>
+            <p id="txt-sobre">Trabalho em equipe, inovação e observância de princípios éticos, são valores importantes para o escritório, pautando o constante compromisso com a excelência. Com profissionais que reúnem experiência prática e sólida formação teórica, o escritório oferece a seus clientes uma equipe única e multidisciplinar com larga visão e conhecimento das estratégias negociais, identificação de soluções contábeis, administrativas e gerencias, inovadoras e eficazes.
+            </p>
+            <div class="botao-sobre">
+                <a href="https://api.whatsapp.com/send?phone=5585988462689&text=" target="_blank" class="btn-sobre">Conheça-nos</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--SERVIÇOS-->
+    <section class="servs" id="sessao-servicos">
+        <h1 id="titulo-servs">SERVIÇOS</h1>
+        <div id="txt-servs">
+            <div id="servs1">
+                <p>Controles Internos</p>
+                <p>Imposto de Renda</p>
+                <p>Folha de Pagamento</p>
+                <p>Contabilidade Gerencial</p>
+                <p>Consultoria</p>
+		        <p>Projetos de Viabilidade Econômica</p>
+		        <p>Planejamento Financeiro/Tributário</p>
+            </div>
+            <div id="servs2">
+                <p>Identificação de possíveis reinstituições no âmbito tributário</p>
+                <p>Recuperação de indébitos Fiscais(Impostos)</p>
+                <p>Identificação de Benefícios no âmbito tributário</p>
+                <p>Auditoria e Serviços Contábeis em Geral</p>
+                <p>Acessoria Contábil/ Empresarial/ Financeira</p>
+                <p>Abertura/ Legalização/ Encerramento de Empresa</p>
+                <p>Avaliação e Reestruturação de Empresas</p>
+            </div>
+        </div>
+        <br>
+        <a href="https://api.whatsapp.com/send?phone=5585988462689&text=" target="_blank" class="btn-servicos">Conheça nossos serviços</a>
+    </section>
+
+    <!--BANNER ROTATIVO-->
+    <div id="slider">
+        <img class="selected" src="pattern.png">
+        <img src="pattern2.png">
+    </div>
+
+    <!--CONTATO-->
+    <section class="contatos" id="sessao-contatos">
+        <img align="right" class="imagem-contatos" src="img/sobre.jpg" alt="logo">
+        <div id="contatos">
+            <h2 id="titulo-contatos">CONTATOS</h2>
+            <div class="icons-contatos">
+                <p class="whatsapp" onclick="redirecionamento_links('https://api.whatsapp.com/send?phone=5585988462689&text=')"><ion-icon name="logo-whatsapp"></ion-icon>(85) 98846-2689</p>
+                <p class="telefone" onclick="redirecionamento_telefone('+558530352689')"><ion-icon name="call-outline"></ion-icon>(85) 3035-2689</p>
+                <p class="instagram" onclick="redirecionamento_links('https://www.instagram.com/cdc.contabilidade')"><ion-icon name="logo-instagram"></ion-icon>cdc.contabilidade</p>
+                <p class="email" onclick="redirecionamento_email('email@email.com')"><ion-icon name="mail-outline"></ion-icon>email@email.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!--RODAPÉ-->
+    <Footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <a href="#home"><img  src="../img/logo_white.png" alt=""></a>
+                <div class="footer-col" id="footer-col">
+                    <h4>Links</h4>
+                    <ul class="atalhos">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sessao-sobre">Quem Somos</a></li>
+                        <li><a href="#sessao-servicos">Nossos Serviços</a></li>
+                        <li><a href="#sessao-contatos">Contatos</a></li>
+                        <li><a href=""></a>Políticas de Privacidade</a></li>
+                    </ul>
+                    <div class="underline"></div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contatos</h4>
+                    <ul>
+                        <p class="whatsapp" onclick="redirecionamento_links('https://api.whatsapp.com/send?phone=5585988462689&text=')"><ion-icon name="logo-whatsapp"></ion-icon>(85) 98846-2689</p>
+                        <p class="telefone" onclick="redirecionamento_telefone('+558530352689')"><ion-icon name="call-outline"></ion-icon>(85) 3035-2689</p>
+                        <p class="instagram" onclick="redirecionamento_links('https://www.instagram.com/cdc.contabilidade')"><ion-icon name="logo-instagram"></ion-icon>cdc.contabilidade</p>
+                        <p class="email" onclick="redirecionamento_email('email@email.com')"><ion-icon name="mail-outline"></ion-icon>email@email.com</p>
+                    </ul>
+                </div>
+                <div class="footer-col" id="footer-col-responsive">
+                    <h4>Localização</h4>
+                    <ul>
+                        <a href="https://maps.app.goo.gl/nhAmt79YwMv5kBdi6" target="_blank"><li>Av. Bernardo Manuel, Nº 8950 Lj: C - Parque Dois Irmãos CEP: 60.761-28</li></a>
+                    </ul>
+                </div>
+                <div class="footer-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.0573994363963!2d-38.551362999999995!3d-3.7976545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74e8a654ef8bd%3A0x498c74e0feb700e2!2sCDC%20CONTABILIDADE%20LTDA!5e0!3m2!1sen!2sbr!4v1700417652657!5m2!1sen!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </Footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
