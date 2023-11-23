@@ -1,2 +1,2 @@
 # CDC-Contabilidade
-Desenvolvimento Web
+Imagens e Banners não configurados corretamente devido a falta delas
